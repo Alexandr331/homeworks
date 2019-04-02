@@ -1,0 +1,12 @@
+Task: Fibonacci number
+
+Input:
+value = 6
+
+script line:
+Hash.new{ |i,j| i[j] = j < 2 ? j : i[j-1] + i[j-2] }[value]
+
+Output result:
+8
+
+P.s The sixth Fibonacci number is 8

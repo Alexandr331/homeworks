@@ -1,0 +1,14 @@
+Task: array to hash to array
+
+Input:
+arr = 1, 3, 6, 8
+
+script line:
+Hash[(0...arr.size).zip arr].values.flatten
+
+
+* Invisible transforms:
+  {0=>1, 1=>3, 2=>6, 3=>8} - array to hash
+*
+Output result:
+  [1, 3, 6, 8]

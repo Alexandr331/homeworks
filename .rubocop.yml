@@ -1,0 +1,4 @@
+AllCops:
+  Excludes:
+    - HW_03/Maksim_Holubeu/*.rb
+    - HW_03/encrypted/*.rb
