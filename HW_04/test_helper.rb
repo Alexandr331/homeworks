@@ -1,6 +1,6 @@
 # require 'pry'
 # rubocop:disable all
-class HW3Runner
+class HW4Runner
   class << self
     def call
       @errors = Hash.new
@@ -11,7 +11,7 @@ class HW3Runner
             require hw_path(dir, task)
           end
           puts "---- Running tests for #{dir} ----"
-          require './HW_03/specs_3.rb'
+          require './HW_04/specs_4.rb'
         end
         Process.wait
         @errors[dir] = $?.exitstatus
@@ -35,14 +35,14 @@ class HW3Runner
     end
 
     def directories
-      Dir.glob('HW_03/*').select { |f| File.directory? f }
+      Dir.glob('HW_04/*').select { |f| File.directory? f }
     end
 
     def tasks_in(folder)
-      Dir.entries(folder).select { |file| file.match? %{hw_03.*\.rb} }
+      Dir.entries(folder).select { |file| file.match? %{hw_04.*\.rb} }
     end
   end
 end
 # rubocop:enable all
 
-HW3Runner.call
+HW4Runner.call
