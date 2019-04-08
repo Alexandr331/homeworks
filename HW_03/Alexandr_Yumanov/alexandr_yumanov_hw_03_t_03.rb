@@ -1,6 +1,6 @@
 require 'date'
 
-def task_03(str)
+def task_3(str)
   result = 0
   line_arr = []
   str.each_line do |line|

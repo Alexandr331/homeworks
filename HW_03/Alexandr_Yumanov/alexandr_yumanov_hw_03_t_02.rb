@@ -1,4 +1,4 @@
-def task_02(str)
+def task_2(str)
   result = []
   str.each_line do |a|
     ip = a[/^.* - -/]
