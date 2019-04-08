@@ -1,4 +1,4 @@
-requie 'date'
+require 'date'
 
 def task_3(str)
   result = 0
